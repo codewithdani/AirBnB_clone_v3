@@ -23,9 +23,9 @@ def returnstuff():
 def stuff():
     '''JSON Responses'''
     todos = {
-            'states': State, 'users': User,
-            'amenities': Amenity, 'cities': City,
-            'places': Place, 'reviews': Review
+        'states': State, 'users': User,
+        'amenities': Amenity, 'cities': City,
+        'places': Place, 'reviews': Review
     }
     for key in todos:
         todos[key] = storage.count(todos[key])
