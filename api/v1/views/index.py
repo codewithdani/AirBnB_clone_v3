@@ -1,4 +1,4 @@
-#!/usr/bin/python3xx
+#!/usr/bin/python3
 '''api status'''
 import models
 from models import storage
@@ -24,7 +24,8 @@ def stuff():
     '''JSON Responses'''
     todos = {'states': State, 'users': User,
             'amenities': Amenity, 'cities': City,
-            'places': Place, 'reviews': Review}
+            'places': Place, 'reviews': Review
+    }
     for key in todos:
         todos[key] = storage.count(todos[key])
     return jsonify(todos)
