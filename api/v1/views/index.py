@@ -22,7 +22,8 @@ def returnstuff():
 @app_views.route('/stats', strict_slashes=False)
 def stuff():
     '''JSON Responses'''
-    todos = {'states': State, 'users': User,
+    todos = {
+            'states': State, 'users': User,
             'amenities': Amenity, 'cities': City,
             'places': Place, 'reviews': Review
     }
