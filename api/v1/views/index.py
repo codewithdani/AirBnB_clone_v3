@@ -10,7 +10,7 @@ from models.review import Review
 from models.state import State
 from models.user import User
 from flask import jsonify
-#from api.v1.views import app_views
+from api.v1.views import app_views
 
 
 @app_views.route('/status', strict_slashes=False)
