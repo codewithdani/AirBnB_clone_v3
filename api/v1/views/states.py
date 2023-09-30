@@ -70,3 +70,5 @@ def daniG():
     storage.save()
     return jsonify(stateObject.to_dict()), '200'
 request.get_json
+
+#PUT /api/v1/states/<state_id>
